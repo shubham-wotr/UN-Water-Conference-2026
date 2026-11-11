@@ -1,484 +1,721 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Securing Drinking Water for All | UN Water Conference 2026</title>
-<meta name="description" content="Virtual session at the UN Water Conference 2026 on strengthening Operation &amp; Maintenance systems for rural drinking water under the Jal Jeevan Mission, India.">
-<link rel="icon" type="image/png" href="Assests/Images/WOTR-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        /* WOTR theme (wotr.org): deep teal + sunflower yellow */
-        "background": "#f8faf9", "surface": "#f8faf9",
-        "surface-container-lowest": "#ffffff", "surface-container-low": "#eef5f3",
-        "surface-container": "#e3efec", "surface-container-high": "#d3e5e1",
-        "surface-variant": "#d3e5e1", "inverse-surface": "#0f3d3a",
-        "on-surface": "#10302d", "on-surface-variant": "#3e5552",
-        "primary": "#134f4c", "on-primary": "#ffffff",
-        "primary-container": "#fdc530", "on-primary-container": "#10302d",
-        "primary-fixed": "#fde9ad", "on-primary-fixed": "#10302d",
-        "secondary": "#1d6b66", "on-secondary": "#ffffff",
-        "tertiary": "#2e7d4f", "on-tertiary": "#ffffff",
-        "accent": "#fdc530", "accent-dim": "#f0b400", "on-accent": "#10302d",
-        "deep": "#0f3d3a",
-        "outline": "#6b7f7c", "outline-variant": "#bfd0cc",
-        "error": "#ba1a1a", "error-container": "#ffdad6",
-        "banner": "#93a9b8"
-      },
-      borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "9999px" },
-      spacing: {
-        "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem",
-        "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin-mobile": "1rem"
-      },
-      fontFamily: { sans: ["Lexend", "system-ui", "sans-serif"] },
-      fontSize: {
-        "display-hero": ["48px", { lineHeight: "56px", fontWeight: "700" }],
-        "headline-lg": ["36px", { lineHeight: "44px", fontWeight: "700" }],
-        "headline-lg-mobile": ["26px", { lineHeight: "33px", fontWeight: "700" }],
-        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
-        "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
-        "title": ["16px", { lineHeight: "24px", fontWeight: "600" }],
-        "body-lg": ["18px", { lineHeight: "28px" }],
-        "body-md": ["15px", { lineHeight: "22px" }],
-        "body-sm": ["13px", { lineHeight: "18px" }],
-        "label-default": ["12px", { lineHeight: "16px", fontWeight: "500" }],
-        "label-caps": ["11px", { lineHeight: "16px", fontWeight: "700" }]
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Securing Drinking Water for All | UN Water Conference 2026</title>
+  <meta name="description"
+    content="Virtual session at the UN Water Conference 2026 on strengthening Operation &amp; Maintenance systems for rural drinking water under the Jal Jeevan Mission, India.">
+  <link rel="icon" type="image/png" href="Assests/Images/WOTR-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            /* WOTR theme (wotr.org): deep teal + sunflower yellow */
+            "background": "#f8faf9", "surface": "#f8faf9",
+            "surface-container-lowest": "#ffffff", "surface-container-low": "#eef5f3",
+            "surface-container": "#e3efec", "surface-container-high": "#d3e5e1",
+            "surface-variant": "#d3e5e1", "inverse-surface": "#0f3d3a",
+            "on-surface": "#10302d", "on-surface-variant": "#3e5552",
+            "primary": "#134f4c", "on-primary": "#ffffff",
+            "primary-container": "#fdc530", "on-primary-container": "#10302d",
+            "primary-fixed": "#fde9ad", "on-primary-fixed": "#10302d",
+            "secondary": "#1d6b66", "on-secondary": "#ffffff",
+            "tertiary": "#2e7d4f", "on-tertiary": "#ffffff",
+            "accent": "#fdc530", "accent-dim": "#f0b400", "on-accent": "#10302d",
+            "deep": "#0f3d3a",
+            "outline": "#6b7f7c", "outline-variant": "#bfd0cc",
+            "error": "#ba1a1a", "error-container": "#ffdad6",
+            "banner": "#93a9b8"
+          },
+          borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "9999px" },
+          spacing: {
+            "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem",
+            "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin-mobile": "1rem"
+          },
+          fontFamily: { sans: ["Lexend", "system-ui", "sans-serif"] },
+          fontSize: {
+            "display-hero": ["48px", { lineHeight: "56px", fontWeight: "700" }],
+            "headline-lg": ["36px", { lineHeight: "44px", fontWeight: "700" }],
+            "headline-lg-mobile": ["26px", { lineHeight: "33px", fontWeight: "700" }],
+            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+            "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+            "title": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px" }],
+            "body-md": ["15px", { lineHeight: "22px" }],
+            "body-sm": ["13px", { lineHeight: "18px" }],
+            "label-default": ["12px", { lineHeight: "16px", fontWeight: "500" }],
+            "label-caps": ["11px", { lineHeight: "16px", fontWeight: "700" }]
+          }
+        }
       }
     }
-  }
-}
-</script>
-<style>
-  html, body { margin: 0; padding: 0; }
-  section[id] { scroll-margin-top: 72px; }
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; line-height: 1; }
-  .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
-  .field { width: 100%; border: 1px solid #bfd0cc; border-radius: 0.375rem; background: #fff; padding: 0.625rem 0.75rem; font-size: 15px; color: #10302d; transition: border-color .15s, box-shadow .15s; }
-  .field:focus { outline: none; border-color: #134f4c; box-shadow: 0 0 0 3px rgba(253,197,48,.45); }
-  .field.invalid { border-color: #ba1a1a; }
-  .nav-link.active { color: #fdc530; box-shadow: inset 0 -2px 0 #fdc530; }
-  .bnav-link.active { color: #fdc530; font-weight: 700; }
-  .bnav-link.active .material-symbols-outlined { font-variation-settings: 'FILL' 1; }
-</style>
+  </script>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    section[id] {
+      scroll-margin-top: 72px;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+    }
+
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .field {
+      width: 100%;
+      border: 1px solid #bfd0cc;
+      border-radius: 0.375rem;
+      background: #fff;
+      padding: 0.625rem 0.75rem;
+      font-size: 15px;
+      color: #10302d;
+      transition: border-color .15s, box-shadow .15s;
+    }
+
+    .field:focus {
+      outline: none;
+      border-color: #134f4c;
+      box-shadow: 0 0 0 3px rgba(253, 197, 48, .45);
+    }
+
+    .field.invalid {
+      border-color: #ba1a1a;
+    }
+
+    .nav-link.active {
+      color: #fdc530;
+      box-shadow: inset 0 -2px 0 #fdc530;
+    }
+
+    .bnav-link.active {
+      color: #fdc530;
+      font-weight: 700;
+    }
+
+    .bnav-link.active .material-symbols-outlined {
+      font-variation-settings: 'FILL' 1;
+    }
+  </style>
 </head>
+
 <body class="bg-background font-sans text-body-md text-on-surface antialiased pb-16 md:pb-0">
 
-<!-- HEADER -->
-<header class="fixed top-0 w-full z-50 bg-deep shadow-[0_2px_10px_rgba(0,0,0,0.18)]">
-  <div class="h-16 max-w-7xl mx-auto px-margin-mobile md:px-gutter flex items-center justify-between gap-space-md">
-    <a href="#top" class="flex items-center gap-space-sm md:gap-space-md min-w-0">
-      <span class="w-9 h-9 rounded-lg flex items-center justify-center bg-white border border-surface-container-high shadow-sm shrink-0 overflow-hidden">
-        <img src="Assests/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
-      </span>
-      <span class="flex flex-col min-w-0">
-        <span class="text-[14px] sm:text-title font-semibold text-white tracking-tight leading-tight truncate">UN Water Conference 2026</span>
-        <span class="text-[9px] sm:text-label-caps font-bold text-accent tracking-wider sm:tracking-widest uppercase truncate">Clean Water &amp; Sanitation for All</span>
-      </span>
-    </a>
-    <nav class="hidden md:flex items-center gap-space-xs" aria-label="Primary">
-      <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors" data-target="about" href="#about">About the Event</a>
-      <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors" data-target="purpose" href="#purpose">Purpose</a>
-      <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors" data-target="speakers" href="#speakers">Speakers</a>
-      <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors" data-target="publication" href="#publication">Relevant Material</a>
-      <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors" data-target="register" href="#register">Register</a>
-    </nav>
-    <a href="#register" class="inline-flex items-center justify-center px-space-md py-space-sm rounded-full bg-accent text-on-accent text-body-sm font-semibold hover:bg-accent-dim transition-colors shrink-0">Register</a>
-  </div>
-</header>
-
-<main id="top" class="w-full bg-surface pt-16">
-
-  <!-- Session strip -->
-  <div class="w-full bg-accent text-on-accent py-space-sm">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-wrap items-center justify-center gap-x-space-sm gap-y-1 text-label-caps uppercase tracking-widest text-center">
-      <span class="material-symbols-outlined text-[16px] animate-pulse">stream</span>
-      <span class="font-bold">Virtual High-Level Session</span>
-      <span class="opacity-60 hidden sm:inline">|</span>
-      <span class="font-medium">Jal Jeevan Mission (JJM) • Special Event</span>
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 bg-deep shadow-[0_2px_10px_rgba(0,0,0,0.18)]">
+    <div class="h-16 max-w-7xl mx-auto px-margin-mobile md:px-gutter flex items-center justify-between gap-space-md">
+      <a href="#top" class="flex items-center gap-space-sm md:gap-space-md min-w-0">
+        <span
+          class="w-9 h-9 rounded-lg flex items-center justify-center bg-white border border-surface-container-high shadow-sm shrink-0 overflow-hidden">
+          <img src="Assests/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
+        </span>
+        <span class="flex flex-col min-w-0">
+          <span class="text-[14px] sm:text-title font-semibold text-white tracking-tight leading-tight truncate">UN
+            Water Conference 2026</span>
+          <span
+            class="text-[9px] sm:text-label-caps font-bold text-accent tracking-wider sm:tracking-widest uppercase truncate">Clean
+            Water &amp; Sanitation for All</span>
+        </span>
+      </a>
+      <nav class="hidden md:flex items-center gap-space-xs" aria-label="Primary">
+        <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors"
+          data-target="about" href="#about">About the Event</a>
+        <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors"
+          data-target="purpose" href="#purpose">Purpose</a>
+        <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors"
+          data-target="speakers" href="#speakers">Speakers</a>
+        <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors"
+          data-target="publication" href="#publication">Relevant Material</a>
+        <a class="nav-link px-space-sm py-space-xs text-body-sm font-semibold text-white hover:text-accent transition-colors"
+          data-target="register" href="#register">Register</a>
+      </nav>
+      <a href="#register"
+        class="inline-flex items-center justify-center px-space-md py-space-sm rounded-full bg-accent text-on-accent text-body-sm font-semibold hover:bg-accent-dim transition-colors shrink-0">Register</a>
     </div>
-  </div>
+  </header>
 
-  <!-- UN Water Conference logo -->
-  <section class="w-full bg-surface-container-lowest">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex items-center justify-center py-space-md">
-      <img src="Assests/Images/Logos.png" alt="United Nations Water Conference Abu Dhabi 2026" class="h-10 sm:h-12 md:h-16 w-auto object-contain">
-    </div>
-  </section>
+  <main id="top" class="w-full bg-surface pt-16">
 
-  <!-- Heading banner -->
-  <section class="w-full bg-banner overflow-hidden">
-    <div class="w-full max-w-7xl mx-auto">
-      <img src="Assests/Images/Heading-banner.png" alt="Every Future Flows From Water – 2026 UN Water Conference, co-hosted by the UAE &amp; Senegal" class="w-full h-auto block">
-    </div>
-  </section>
-
-  <!-- Hosts -->
-  <section class="w-full bg-surface-container-lowest border-b border-surface-container-high shadow-sm">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row items-center justify-center gap-space-lg md:gap-space-xl py-space-lg">
-      <div class="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-md">
-        <span class="text-label-caps text-on-surface-variant uppercase tracking-wider shrink-0">Main host:</span>
-        <div class="flex items-center gap-space-md">
-          <img src="Assests/Images/WOTR Logo_with Tagline.png" alt="WOTR – Watershed Organisation Trust" class="h-10 md:h-12 w-auto object-contain">
-          <span class="h-10 w-px bg-outline-variant"></span>
-          <img src="Assests/Images/W-CReSLogo with Tagline.png" alt="W-CReS – WOTR Centre for Resilience Studies" class="h-12 md:h-14 w-auto object-contain">
-        </div>
-      </div>
-      <div class="h-10 w-px bg-outline-variant hidden md:block"></div>
-      <div class="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-md">
-        <span class="text-label-caps text-on-surface-variant uppercase tracking-wider shrink-0">Co-hosts:</span>
-        <div class="flex items-center gap-space-lg">
-          <img src="Assests/Images/ABCD-Centre-Logo.png" alt="ABCD Centre – Global Water and Climate Adaptation Centre" class="h-10 md:h-12 w-auto object-contain">
-          <img src="Assests/Images/UNICEF_ForEveryChild_Cyan_Vertical_RGB__144ppi_ENG.png" alt="UNICEF – for every child" class="h-12 md:h-14 w-auto object-contain">
-        </div>
+    <!-- Session strip -->
+    <div class="w-full bg-accent text-on-accent py-space-sm">
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-wrap items-center justify-center gap-x-space-sm gap-y-1 text-label-caps uppercase tracking-widest text-center">
+        <span class="material-symbols-outlined text-[16px] animate-pulse">stream</span>
+        <span class="font-bold">Virtual High-Level Session</span>
+        <span class="opacity-60 hidden sm:inline">|</span>
+        <span class="font-medium">Jal Jeevan Mission (JJM) • Special Event</span>
       </div>
     </div>
-  </section>
 
-  <!-- HERO -->
-  <section class="w-full bg-surface-container-low py-space-xl">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-        <div class="lg:col-span-7 flex flex-col gap-space-md text-center lg:text-left items-center lg:items-start">
-          <h1 class="text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight">
-            Securing Drinking Water for All: Strengthening Operation &amp; Maintenance Systems for Sustainable and Climate-Resilient Drinking Water Services under the Jal Jeevan Mission (JJM) in India
-          </h1>
-          <div class="flex items-start gap-space-xs text-secondary text-body-md md:text-title font-semibold">
-            <span class="material-symbols-outlined text-[20px] text-primary">handshake</span>
-            <span>A session conducted jointly with UNICEF, WOTR and ABCD-CENTRE</span>
+    <!-- UN Water Conference logo -->
+    <section class="w-full bg-surface-container-lowest">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex items-center justify-center py-space-md">
+        <img src="Assests/Images/Logos.png" alt="United Nations Water Conference Abu Dhabi 2026"
+          class="h-10 sm:h-12 md:h-16 w-auto object-contain">
+      </div>
+    </section>
+
+    <!-- Heading banner -->
+    <section class="w-full bg-banner overflow-hidden">
+      <div class="w-full max-w-7xl mx-auto">
+        <img src="Assests/Images/Heading-banner.png"
+          alt="Every Future Flows From Water – 2026 UN Water Conference, co-hosted by the UAE &amp; Senegal"
+          class="w-full h-auto block">
+      </div>
+    </section>
+
+    <!-- Hosts -->
+    <section class="w-full bg-surface-container-lowest border-b border-surface-container-high shadow-sm">
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col md:flex-row items-center justify-center gap-space-lg md:gap-space-xl py-space-lg">
+        <div class="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-md">
+          <span class="text-label-caps text-on-surface-variant uppercase tracking-wider shrink-0">Main host:</span>
+          <div class="flex items-center gap-space-md">
+            <img src="Assests/Images/WOTR Logo_with Tagline.png" alt="WOTR – Watershed Organisation Trust"
+              class="h-10 md:h-12 w-auto object-contain">
+            <span class="h-10 w-px bg-outline-variant"></span>
+            <img src="Assests/Images/W-CReSLogo with Tagline.png" alt="W-CReS – WOTR Centre for Resilience Studies"
+              class="h-12 md:h-14 w-auto object-contain">
           </div>
-          <p class="text-body-md md:text-body-lg text-on-surface-variant">
-            This session will explore innovative, actionable pathways to strengthen and incentivise JJM O&amp;M systems through improved service delivery, water quality, financial and source sustainability, local governance and regulatory measures.
+        </div>
+        <div class="h-10 w-px bg-outline-variant hidden md:block"></div>
+        <div class="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-md">
+          <span class="text-label-caps text-on-surface-variant uppercase tracking-wider shrink-0">Co-hosts:</span>
+          <div class="flex items-center gap-space-lg">
+            <img src="Assests/Images/ABCD-Centre-Logo.png"
+              alt="ABCD Centre – Global Water and Climate Adaptation Centre" class="h-10 md:h-20 w-auto object-contain">
+            <img src="Assests/Images/UNICEF_ForEveryChild_Cyan_Vertical_RGB__144ppi_ENG.png"
+              alt="UNICEF – for every child" class="h-12 md:h-14 w-auto object-contain">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERO -->
+    <section class="w-full bg-surface-container-low py-space-xl">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+          <div class="lg:col-span-7 flex flex-col gap-space-md text-center lg:text-left items-center lg:items-start">
+            <h1 class="text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight">
+              Securing Drinking Water for All: Strengthening Operation &amp; Maintenance Systems for Sustainable and
+              Climate-Resilient Drinking Water Services under the Jal Jeevan Mission (JJM) in India
+            </h1>
+            <div class="flex items-start gap-space-xs text-secondary text-body-md md:text-title font-semibold">
+              <span class="material-symbols-outlined text-[20px] text-primary">handshake</span>
+              <span>A session conducted jointly with UNICEF, WOTR and ABCD-CENTRE</span>
+            </div>
+            <p class="text-body-md md:text-body-lg text-on-surface-variant">
+              This session will explore innovative, actionable pathways to strengthen and incentivise JJM O&amp;M
+              systems through improved service delivery, water quality, financial and source sustainability, local
+              governance and regulatory measures.
+            </p>
+            <div class="flex flex-wrap justify-center lg:justify-start gap-space-sm pt-space-xs">
+              <div
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default">
+                <span class="material-symbols-outlined text-primary text-[18px]">calendar_today</span><span>Date: 9th
+                  December 2026</span>
+              </div>
+              <div
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default text-left">
+                <span class="material-symbols-outlined text-primary text-[18px]">schedule</span><span>Time: 2:30 PM –
+                  4:00 PM (GST) / 4:30 PM – 6:00 PM (IST)</span>
+              </div>
+              <div
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default">
+                <span class="material-symbols-outlined text-primary text-[18px]">videocam</span><span>Format: Virtual
+                  International Event</span>
+              </div>
+              <div
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default">
+                <span class="material-symbols-outlined text-primary text-[18px]">eco</span><span>Theme: SDG 6 &amp;
+                  Climate Resilience</span>
+              </div>
+            </div>
+            <div class="pt-space-sm w-full sm:w-auto">
+              <a href="#register"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-accent text-on-accent text-title hover:bg-accent-dim transition-colors shadow-sm">
+                <span>Register Now</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div
+              class="w-full max-w-[260px] lg:max-w-sm bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex items-center justify-center">
+              <img src="Assests/Images/JJM-Logo.png" alt="Har Ghar Jal – Jal Jeevan Mission"
+                class="w-full max-h-[340px] h-auto object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="w-full py-space-xl bg-surface">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
+        <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface text-center md:text-left">About the Event
+        </h2>
+        <div
+          class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm text-on-surface-variant text-body-md md:text-body-lg leading-relaxed flex flex-col gap-space-md">
+          <p>Access to safe and reliable drinking water is fundamental to human dignity, public health and sustainable
+            development. Under the Jal Jeevan Mission (JJM), India has made significant investments in rural drinking
+            water infrastructure, with the vision of providing safe and adequate drinking water to every rural household
+            through functional tap connections. However, the long-term success of this ambitious programme depends not
+            only on creating infrastructure but also on ensuring that drinking water systems remain functional,
+            financially viable, inclusive and resilient to climate variability. Strengthening operation and maintenance
+            (O&amp;M) systems is therefore central to ensuring the long-term sustainability of rural drinking water
+            services.</p>
+          <p>This requires a comprehensive approach that integrates technical systems with institutional capacity,
+            community participation, financial planning, source sustainability and evidence-based decision-making.
+            India’s experience under JJM offers important lessons on how government programmes, civil society
+            organisations, technical institutions and local communities can work together to strengthen drinking water
+            governance. Community-led approaches, locally grounded institutional mechanisms and innovative assessment
+            tools can help identify gaps, improve accountability and support the transition towards sustainable service
+            delivery.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+          <div
+            class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs items-center text-center md:items-start md:text-left">
+            <div class="w-10 h-10 rounded-lg bg-accent text-on-accent flex items-center justify-center mb-1"><span
+                class="material-symbols-outlined">construction</span></div>
+            <span class="text-label-caps text-secondary uppercase tracking-wider">Strategic Pillar 01</span>
+            <h3 class="text-title text-on-surface">Infrastructure to Functionality</h3>
+            <p class="text-body-md text-on-surface-variant">Moving beyond physical tap construction toward dependable
+              service levels, continuous water quality, and long-term reliability.</p>
+          </div>
+          <div
+            class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs items-center text-center md:items-start md:text-left">
+            <div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-1"><span
+                class="material-symbols-outlined">groups</span></div>
+            <span class="text-label-caps text-secondary uppercase tracking-wider">Strategic Pillar 02</span>
+            <h3 class="text-title text-on-surface">Community-Led Governance</h3>
+            <p class="text-body-md text-on-surface-variant">Empowering Gram Panchayats and Village Water &amp;
+              Sanitation Committees (VWSCs) with financial and operational autonomy.</p>
+          </div>
+          <div
+            class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs items-center text-center md:items-start md:text-left">
+            <div class="w-10 h-10 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center mb-1"><span
+                class="material-symbols-outlined">nature_people</span></div>
+            <span class="text-label-caps text-secondary uppercase tracking-wider">Strategic Pillar 03</span>
+            <h3 class="text-title text-on-surface">Climate &amp; Source Resilience</h3>
+            <p class="text-body-md text-on-surface-variant">Safeguarding aquifer and surface sources against depletion,
+              erratic rainfall shocks, and seasonal water stresses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PURPOSE -->
+    <section id="purpose" class="w-full py-space-xl bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
+        <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface text-center md:text-left">Purpose of the
+          Event</h2>
+        <div
+          class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm text-on-surface-variant text-body-md md:text-body-lg leading-relaxed flex flex-col gap-space-md">
+          <p>This virtual event will bring together practitioners, development organisations, researchers and sector
+            experts to share experiences and identify actionable pathways for strengthening O&amp;M systems and local
+            water governance for sustainable rural drinking water services. The event will highlight innovative and
+            community-led approaches that connect service delivery, water quality, financial sustainability, source
+            protection and climate resilience. It will also explore how evidence, digital tools and institutional
+            partnerships can strengthen planning, monitoring and accountability under JJM.</p>
+          <p>By drawing on experiences from India, the session aims to contribute to the global dialogue on achieving
+            SDG 6: ensuring the availability and sustainable management of water and sanitation for all, with particular
+            emphasis on the long-term functionality, reliability and resilience of rural drinking water systems.</p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-space-sm md:gap-space-md">
+          <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+            <div class="flex items-center gap-2 text-primary"><span
+                class="material-symbols-outlined">water_drop</span><span
+                class="text-label-caps tracking-wider uppercase">Focus 01</span></div>
+            <h3 class="text-title text-on-surface">Availability &amp; Safety</h3>
+            <p class="text-body-sm text-on-surface-variant">Universal, affordable and safe drinking water for rural
+              populations.</p>
+          </div>
+          <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+            <div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined">build</span><span
+                class="text-label-caps tracking-wider uppercase">Focus 02</span></div>
+            <h3 class="text-title text-on-surface">Operation &amp; Maintenance</h3>
+            <p class="text-body-sm text-on-surface-variant">Institutionalised repair mechanisms, user fee viability, and
+              asset longevity.</p>
+          </div>
+          <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+            <div class="flex items-center gap-2 text-primary"><span
+                class="material-symbols-outlined">monitoring</span><span
+                class="text-label-caps tracking-wider uppercase">Focus 03</span></div>
+            <h3 class="text-title text-on-surface">Digital &amp; Evidence Tools</h3>
+            <p class="text-body-sm text-on-surface-variant">Evidence, digital tools and partnerships for planning,
+              monitoring and accountability.</p>
+          </div>
+          <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
+            <div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined">public</span><span
+                class="text-label-caps tracking-wider uppercase">Focus 04</span></div>
+            <h3 class="text-title text-on-surface">Global Policy Dialogue</h3>
+            <p class="text-body-sm text-on-surface-variant">Bringing India’s experience into the global dialogue on
+              achieving SDG 6.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <section id="speakers" class="w-full py-space-xl bg-surface">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
+        <div class="flex flex-col gap-1 text-center md:text-left">
+          <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface">Moderator &amp; Panelists</h2>
+          <p class="text-body-md text-on-surface-variant mt-1">The 90-minute session will bring together experts
+            representing research, civil society, water-sector organisations and community-led development initiatives.
           </p>
-          <div class="flex flex-wrap justify-center lg:justify-start gap-space-sm pt-space-xs">
-            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default"><span class="material-symbols-outlined text-primary text-[18px]">calendar_today</span><span>Date: 9th December 2026</span></div>
-            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default text-left"><span class="material-symbols-outlined text-primary text-[18px]">schedule</span><span>Time: 2:30 PM – 4:00 PM (GST) / 4:30 PM – 6:00 PM (IST)</span></div>
-            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default"><span class="material-symbols-outlined text-primary text-[18px]">videocam</span><span>Format: Virtual International Event</span></div>
-            <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full lg:rounded-lg bg-surface-container-lowest shadow-sm text-label-default"><span class="material-symbols-outlined text-primary text-[18px]">eco</span><span>Theme: SDG 6 &amp; Climate Resilience</span></div>
+        </div>
+
+        <!-- Moderator -->
+        <div
+          class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-center gap-space-lg">
+          <div
+            class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden shrink-0 shadow-sm bg-surface-container-lowest">
+            <img src="Assests/Images/Sarah-Elser.jpeg" alt="Sarah Elser" class="w-full h-full object-cover object-top"
+              loading="lazy">
           </div>
-          <div class="pt-space-sm w-full sm:w-auto">
-            <a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-accent text-on-accent text-title hover:bg-accent-dim transition-colors shadow-sm">
-              <span>Register Now</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          <div class="flex flex-col gap-space-xs text-center md:text-left">
+            <span
+              class="inline-flex self-center md:self-start px-space-sm py-0.5 rounded bg-primary text-on-primary text-label-caps uppercase tracking-wider">Session
+              Moderator</span>
+            <h3 class="text-headline-sm text-on-surface">Sarah Elser</h3>
+            <p class="text-body-md text-secondary font-medium">Coordinator, Global Water and Climate Adaptation Centre
+              (ABCD Centre), Technische Universität Dresden, Germany</p>
+            <div class="flex items-center gap-space-sm pt-space-xs justify-center md:justify-start">
+              <img src="Assests/Images/ABCD-Centre-Logo.png" alt="ABCD Centre"
+                class="h-12 w-auto object-contain shrink-0">
+              <span class="text-label-caps uppercase text-secondary tracking-wide text-left">Global Water and Climate
+                Adaptation Centre</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Speakers grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="speaker-grid"></div>
+
+        <!-- Concluding remarks -->
+        <div
+          class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-center gap-space-lg">
+          <div
+            class="w-28 h-28 sm:w-32 sm:h-32 rounded-full sm:rounded-lg overflow-hidden shrink-0 shadow-sm bg-surface-container-lowest">
+            <img src="Assests/Images/Bishwadeep-Ghosh.jpeg" alt="Bishwadeep Ghose"
+              class="w-full h-full object-cover object-top" loading="lazy">
+          </div>
+          <div class="flex flex-col gap-space-xs text-center sm:text-left">
+            <span
+              class="inline-flex self-center sm:self-start px-space-sm py-0.5 rounded bg-tertiary text-on-tertiary text-label-caps uppercase tracking-wider">Key
+              Takeaways and Concluding Remarks</span>
+            <h3 class="text-headline-sm text-on-surface">Bishwadeep Ghose</h3>
+            <p class="text-body-md text-secondary font-medium">Country Director, Water For People, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELEVANT MATERIAL -->
+    <section id="publication" class="w-full py-space-xl bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
+        <div class="flex flex-col gap-1 text-center md:text-left">
+          <span class="text-label-caps text-secondary uppercase tracking-wider">Relevant Material</span>
+          <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface">Jal-Suraksha: Securing Rural Drinking
+            Water Services</h2>
+          <p class="text-title text-secondary">A Robust Operation &amp; Maintenance Framework for the Jal Jeevan Mission
+            at the Gram Panchayat</p>
+        </div>
+        <div
+          class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-md grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
+          <div class="lg:col-span-4 flex justify-center">
+            <a href="Assests/Jal-Suraksha-Brochure.pdf" target="_blank" rel="noopener"
+              class="block rounded-lg overflow-hidden shadow-lg max-w-[240px] md:max-w-[280px] hover:shadow-xl transition-shadow">
+              <img src="Assests/Images/Publication-cover.png" alt="Jal-Suraksha publication cover"
+                class="w-full h-auto block" loading="lazy">
             </a>
           </div>
-        </div>
-        <div class="lg:col-span-5 flex justify-center lg:justify-end">
-          <div class="w-full max-w-[260px] lg:max-w-sm bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex items-center justify-center">
-            <img src="Assests/Images/JJM-Logo.png" alt="Har Ghar Jal – Jal Jeevan Mission" class="w-full max-h-[340px] h-auto object-contain">
+          <div class="lg:col-span-8 flex flex-col gap-space-md">
+            <p class="text-body-md md:text-body-lg text-on-surface-variant">A practical framework for rural drinking
+              water governance, outlining operational guidelines to move from asset construction to sustained service
+              delivery across Gram Panchayats.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+              <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span
+                  class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">account_balance</span>
+                <div><span class="text-body-sm text-on-surface font-semibold block">Institutional Mechanisms &amp;
+                    Governance</span><span class="text-body-sm text-on-surface-variant block">Roles of Gram Panchayats,
+                    VWSCs, Pani Samitis and local water bodies.</span></div>
+              </div>
+              <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span
+                  class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">construction</span>
+                <div><span class="text-body-sm text-on-surface font-semibold block">Technical Operations &amp;
+                    Maintenance</span><span class="text-body-sm text-on-surface-variant block">Preventive maintenance,
+                    asset registers, repairs and spare-part management.</span></div>
+              </div>
+              <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span
+                  class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">biotech</span>
+                <div><span class="text-body-sm text-on-surface font-semibold block">Water Quality Monitoring</span><span
+                    class="text-body-sm text-on-surface-variant block">Field test kits, chlorination, sanitary
+                    inspections and lab testing.</span></div>
+              </div>
+              <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span
+                  class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">payments</span>
+                <div><span class="text-body-sm text-on-surface font-semibold block">Financial Sustainability</span><span
+                    class="text-body-sm text-on-surface-variant block">User fee structures, O&amp;M costing and
+                    contingency funds.</span></div>
+              </div>
+              <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm sm:col-span-2">
+                <span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">eco</span>
+                <div><span class="text-body-sm text-on-surface font-semibold block">Source Sustainability &amp;
+                    Community Stewardship</span><span class="text-body-sm text-on-surface-variant block">Groundwater
+                    recharge, water security planning, source protection and women-led community surveillance.</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center lg:justify-start pt-space-sm">
+              <a href="Assests/Jal-Suraksha-Brochure.pdf" download
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-primary text-on-primary text-title hover:bg-secondary transition-colors shadow-sm">
+                <span class="material-symbols-outlined text-[20px]">download</span><span>Download PDF</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="w-full py-space-xl bg-surface">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
-      <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface text-center md:text-left">About the Event</h2>
-      <div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm text-on-surface-variant text-body-md md:text-body-lg leading-relaxed flex flex-col gap-space-md">
-        <p>Access to safe and reliable drinking water is fundamental to human dignity, public health and sustainable development. Under the Jal Jeevan Mission (JJM), India has made significant investments in rural drinking water infrastructure, with the vision of providing safe and adequate drinking water to every rural household through functional tap connections. However, the long-term success of this ambitious programme depends not only on creating infrastructure but also on ensuring that drinking water systems remain functional, financially viable, inclusive and resilient to climate variability. Strengthening operation and maintenance (O&amp;M) systems is therefore central to ensuring the long-term sustainability of rural drinking water services.</p>
-        <p>This requires a comprehensive approach that integrates technical systems with institutional capacity, community participation, financial planning, source sustainability and evidence-based decision-making. India’s experience under JJM offers important lessons on how government programmes, civil society organisations, technical institutions and local communities can work together to strengthen drinking water governance. Community-led approaches, locally grounded institutional mechanisms and innovative assessment tools can help identify gaps, improve accountability and support the transition towards sustainable service delivery.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
-        <div class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs items-center text-center md:items-start md:text-left">
-          <div class="w-10 h-10 rounded-lg bg-accent text-on-accent flex items-center justify-center mb-1"><span class="material-symbols-outlined">construction</span></div>
-          <span class="text-label-caps text-secondary uppercase tracking-wider">Strategic Pillar 01</span>
-          <h3 class="text-title text-on-surface">Infrastructure to Functionality</h3>
-          <p class="text-body-md text-on-surface-variant">Moving beyond physical tap construction toward dependable service levels, continuous water quality, and long-term reliability.</p>
+    <!-- REGISTRATION -->
+    <section id="register" class="w-full py-space-xl bg-surface">
+      <div class="max-w-3xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
+        <div class="text-center flex flex-col gap-1">
+          <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface">Registration: Virtual High-Level
+            Session</h2>
+          <p class="text-body-md text-on-surface-variant">Register below to receive the session joining link and
+            calendar details by email.</p>
         </div>
-        <div class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs items-center text-center md:items-start md:text-left">
-          <div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-1"><span class="material-symbols-outlined">groups</span></div>
-          <span class="text-label-caps text-secondary uppercase tracking-wider">Strategic Pillar 02</span>
-          <h3 class="text-title text-on-surface">Community-Led Governance</h3>
-          <p class="text-body-md text-on-surface-variant">Empowering Gram Panchayats and Village Water &amp; Sanitation Committees (VWSCs) with financial and operational autonomy.</p>
-        </div>
-        <div class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col gap-space-xs items-center text-center md:items-start md:text-left">
-          <div class="w-10 h-10 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center mb-1"><span class="material-symbols-outlined">nature_people</span></div>
-          <span class="text-label-caps text-secondary uppercase tracking-wider">Strategic Pillar 03</span>
-          <h3 class="text-title text-on-surface">Climate &amp; Source Resilience</h3>
-          <p class="text-body-md text-on-surface-variant">Safeguarding aquifer and surface sources against depletion, erratic rainfall shocks, and seasonal water stresses.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- PURPOSE -->
-  <section id="purpose" class="w-full py-space-xl bg-surface-container-low">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
-      <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface text-center md:text-left">Purpose of the Event</h2>
-      <div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm text-on-surface-variant text-body-md md:text-body-lg leading-relaxed flex flex-col gap-space-md">
-        <p>This virtual event will bring together practitioners, development organisations, researchers and sector experts to share experiences and identify actionable pathways for strengthening O&amp;M systems and local water governance for sustainable rural drinking water services. The event will highlight innovative and community-led approaches that connect service delivery, water quality, financial sustainability, source protection and climate resilience. It will also explore how evidence, digital tools and institutional partnerships can strengthen planning, monitoring and accountability under JJM.</p>
-        <p>By drawing on experiences from India, the session aims to contribute to the global dialogue on achieving SDG 6: ensuring the availability and sustainable management of water and sanitation for all, with particular emphasis on the long-term functionality, reliability and resilience of rural drinking water systems.</p>
-      </div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-space-sm md:gap-space-md">
-        <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
-          <div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined">water_drop</span><span class="text-label-caps tracking-wider uppercase">Focus 01</span></div>
-          <h3 class="text-title text-on-surface">Availability &amp; Safety</h3>
-          <p class="text-body-sm text-on-surface-variant">Universal, affordable and safe drinking water for rural populations.</p>
-        </div>
-        <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
-          <div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined">build</span><span class="text-label-caps tracking-wider uppercase">Focus 02</span></div>
-          <h3 class="text-title text-on-surface">Operation &amp; Maintenance</h3>
-          <p class="text-body-sm text-on-surface-variant">Institutionalised repair mechanisms, user fee viability, and asset longevity.</p>
-        </div>
-        <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
-          <div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined">monitoring</span><span class="text-label-caps tracking-wider uppercase">Focus 03</span></div>
-          <h3 class="text-title text-on-surface">Digital &amp; Evidence Tools</h3>
-          <p class="text-body-sm text-on-surface-variant">Evidence, digital tools and partnerships for planning, monitoring and accountability.</p>
-        </div>
-        <div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-xs">
-          <div class="flex items-center gap-2 text-primary"><span class="material-symbols-outlined">public</span><span class="text-label-caps tracking-wider uppercase">Focus 04</span></div>
-          <h3 class="text-title text-on-surface">Global Policy Dialogue</h3>
-          <p class="text-body-sm text-on-surface-variant">Bringing India’s experience into the global dialogue on achieving SDG 6.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <div
+          class="bg-surface-container-lowest p-space-md sm:p-space-lg md:p-space-xl rounded-xl shadow-md flex flex-col gap-space-lg">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+            <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span
+                class="material-symbols-outlined text-primary text-[20px] shrink-0">calendar_today</span>
+              <div><span class="text-body-sm text-on-surface block font-semibold">9th December 2026</span><span
+                  class="text-body-sm text-on-surface-variant block">2:30 PM – 4:00 PM (GST) | 4:30 PM – 6:00 PM
+                  (IST)</span></div>
+            </div>
+            <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span
+                class="material-symbols-outlined text-primary text-[20px] shrink-0">videocam</span>
+              <div><span class="text-body-sm text-on-surface block font-semibold">90 Minutes • Virtual</span><span
+                  class="text-body-sm text-on-surface-variant block">Joining link shared by email after
+                  registration</span></div>
+            </div>
+          </div>
 
-  <!-- SPEAKERS -->
-  <section id="speakers" class="w-full py-space-xl bg-surface">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
-      <div class="flex flex-col gap-1 text-center md:text-left">
-        <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface">Moderator &amp; Panelists</h2>
-        <p class="text-body-md text-on-surface-variant mt-1">The 90-minute session will bring together experts representing research, civil society, water-sector organisations and community-led development initiatives.</p>
-      </div>
+          <form id="reg-form" class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" novalidate>
+            <div class="flex flex-col gap-1">
+              <label for="f-name" class="text-label-default text-on-surface">Full name <span
+                  class="text-error">*</span></label>
+              <input id="f-name" name="name" type="text" class="field" autocomplete="name" required>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="f-email" class="text-label-default text-on-surface">Email address <span
+                  class="text-error">*</span></label>
+              <input id="f-email" name="email" type="email" class="field" autocomplete="email" required>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="f-org" class="text-label-default text-on-surface">Organisation <span
+                  class="text-error">*</span></label>
+              <input id="f-org" name="organisation" type="text" class="field" autocomplete="organization" required>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="f-role" class="text-label-default text-on-surface">Designation</label>
+              <input id="f-role" name="designation" type="text" class="field" autocomplete="organization-title">
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="f-country" class="text-label-default text-on-surface">Country <span
+                  class="text-error">*</span></label>
+              <input id="f-country" name="country" type="text" class="field" autocomplete="country-name" required>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="f-type" class="text-label-default text-on-surface">Organisation type</label>
+              <select id="f-type" name="org_type" class="field">
+                <option value="">Select…</option>
+                <option>Government</option>
+                <option>NGO / Civil Society</option>
+                <option>UN / Multilateral Agency</option>
+                <option>Research / Academia</option>
+                <option>Private Sector</option>
+                <option>Media</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1 sm:col-span-2">
+              <label for="f-msg" class="text-label-default text-on-surface">Questions for the panel (optional)</label>
+              <textarea id="f-msg" name="questions" rows="3" class="field resize-y"></textarea>
+            </div>
+            <label
+              class="sm:col-span-2 flex items-start gap-space-sm text-body-sm text-on-surface-variant cursor-pointer">
+              <input id="f-consent" name="consent" type="checkbox" class="mt-0.5 w-4 h-4 accent-[#00658e]" required>
+              <span>I agree to be contacted by the organisers about this event. <span class="text-error">*</span></span>
+            </label>
+            <p id="form-error" class="sm:col-span-2 hidden text-body-sm text-error" role="alert">Please fill in all
+              required fields correctly.</p>
+            <div class="sm:col-span-2">
+              <button type="submit"
+                class="w-full inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-accent text-on-accent text-title hover:bg-accent-dim transition-colors shadow-sm">
+                <span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Register</span>
+              </button>
+            </div>
+          </form>
 
-      <!-- Moderator -->
-      <div class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-center gap-space-lg">
-        <div class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden shrink-0 shadow-sm bg-surface-container-lowest">
-          <img src="Assests/Images/Sarah-Elser.jpeg" alt="Sarah Elser" class="w-full h-full object-cover object-top" loading="lazy">
+          <div id="form-success" class="hidden flex-col items-center text-center gap-space-sm py-space-lg"
+            role="status">
+            <span class="w-14 h-14 rounded-full bg-primary-fixed text-primary flex items-center justify-center"><span
+                class="material-symbols-outlined text-[32px]">check_circle</span></span>
+            <h3 class="text-headline-sm text-on-surface">Thank you for registering!</h3>
+            <p class="text-body-md text-on-surface-variant max-w-md">The joining link and calendar details will be sent
+              to your email before the session.</p>
+          </div>
+
+          <p
+            class="text-body-sm text-on-surface-variant text-center bg-surface-container-low rounded-lg py-space-sm px-space-md">
+            Need help with registration? Call <a href="tel:+919822684182"
+              class="text-primary font-medium hover:underline whitespace-nowrap">+91 98226 84182</a>
+          </p>
         </div>
-        <div class="flex flex-col gap-space-xs text-center md:text-left">
-          <span class="inline-flex self-center md:self-start px-space-sm py-0.5 rounded bg-primary text-on-primary text-label-caps uppercase tracking-wider">Session Moderator</span>
-          <h3 class="text-headline-sm text-on-surface">Sarah Elser</h3>
-          <p class="text-body-md text-secondary font-medium">Coordinator, Global Water and Climate Adaptation Centre (ABCD Centre), Technische Universität Dresden, Germany</p>
-          <div class="flex items-center gap-space-sm pt-space-xs justify-center md:justify-start">
-            <img src="Assests/Images/ABCD-Centre-Logo.png" alt="ABCD Centre" class="h-8 w-auto object-contain shrink-0">
-            <span class="text-label-caps uppercase text-secondary tracking-wide text-left">Global Water and Climate Adaptation Centre</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full bg-primary text-white">
+    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl">
+        <div class="md:col-span-2 flex flex-col gap-space-md items-center text-center md:items-start md:text-left">
+          <div class="flex items-center gap-space-sm">
+            <span class="w-10 h-10 rounded-lg flex items-center justify-center bg-white shrink-0 overflow-hidden">
+              <img src="Assests/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
+            </span>
+            <span class="text-title text-white">UN Water Conference 2026</span>
+          </div>
+          <p class="text-body-sm leading-relaxed max-w-md text-white/85">Securing Drinking Water for All — a virtual
+            session on sustainable, climate-resilient rural drinking water services under the Jal Jeevan Mission.</p>
+          <div class="inline-flex items-center gap-space-md bg-white rounded-xl px-space-md py-space-sm">
+            <img src="Assests/Images/WOTR Logo_with Tagline.png" alt="WOTR" class="h-9 w-auto object-contain">
+            <span class="h-8 w-px bg-outline-variant"></span>
+            <img src="Assests/Images/W-CReSLogo with Tagline.png" alt="W-CReS" class="h-11 w-auto object-contain">
           </div>
         </div>
-      </div>
-
-      <!-- Speakers grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="speaker-grid"></div>
-
-      <!-- Concluding remarks -->
-      <div class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-center gap-space-lg">
-        <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full sm:rounded-lg overflow-hidden shrink-0 shadow-sm bg-surface-container-lowest">
-          <img src="Assests/Images/Bishwadeep-Ghosh.jpeg" alt="Bishwadeep Ghose" class="w-full h-full object-cover object-top" loading="lazy">
+        <div class="flex flex-col gap-space-sm items-center md:items-start">
+          <span class="text-title text-accent">Event Overview</span>
+          <ul class="space-y-space-xs text-body-md uppercase text-center md:text-left">
+            <li><a class="hover:text-accent transition-colors" href="#about">About the Event</a></li>
+            <li><a class="hover:text-accent transition-colors" href="#purpose">Purpose</a></li>
+            <li><a class="hover:text-accent transition-colors" href="#speakers">Speakers</a></li>
+            <li><a class="hover:text-accent transition-colors" href="#publication">Relevant Material</a></li>
+            <li><a class="hover:text-accent transition-colors" href="#register">Registration</a></li>
+          </ul>
         </div>
-        <div class="flex flex-col gap-space-xs text-center sm:text-left">
-          <span class="inline-flex self-center sm:self-start px-space-sm py-0.5 rounded bg-tertiary text-on-tertiary text-label-caps uppercase tracking-wider">Key Takeaways and Concluding Remarks</span>
-          <h3 class="text-headline-sm text-on-surface">Bishwadeep Ghose</h3>
-          <p class="text-body-md text-secondary font-medium">Country Director, Water For People, India</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RELEVANT MATERIAL -->
-  <section id="publication" class="w-full py-space-xl bg-surface-container-low">
-    <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
-      <div class="flex flex-col gap-1 text-center md:text-left">
-        <span class="text-label-caps text-secondary uppercase tracking-wider">Relevant Material</span>
-        <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface">Jal-Suraksha: Securing Rural Drinking Water Services</h2>
-        <p class="text-title text-secondary">A Robust Operation &amp; Maintenance Framework for the Jal Jeevan Mission at the Gram Panchayat</p>
-      </div>
-      <div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-md grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
-        <div class="lg:col-span-4 flex justify-center">
-          <a href="Assests/Jal-Suraksha-Brochure.pdf" target="_blank" rel="noopener" class="block rounded-lg overflow-hidden shadow-lg max-w-[240px] md:max-w-[280px] hover:shadow-xl transition-shadow">
-            <img src="Assests/Images/Publication-cover.png" alt="Jal-Suraksha publication cover" class="w-full h-auto block" loading="lazy">
+        <div class="flex flex-col gap-space-md items-center md:items-start text-center md:text-left">
+          <span class="text-title text-accent">Contact</span>
+          <a href="mailto:info@wotr.org" class="flex items-center gap-space-md hover:text-accent transition-colors">
+            <span
+              class="w-10 h-10 rounded-full bg-accent text-on-accent flex items-center justify-center shrink-0"><span
+                class="material-symbols-outlined text-[20px]">mail</span></span>
+            <span>info@wotr.org</span>
+          </a>
+          <a href="tel:+919822684182" class="flex items-center gap-space-md hover:text-accent transition-colors">
+            <span
+              class="w-10 h-10 rounded-full bg-accent text-on-accent flex items-center justify-center shrink-0"><span
+                class="material-symbols-outlined text-[20px]">call</span></span>
+            <span>+91 98226 84182</span>
+          </a>
+          <a href="https://wotr.org" target="_blank" rel="noopener"
+            class="flex items-center gap-space-md hover:text-accent transition-colors">
+            <span
+              class="w-10 h-10 rounded-full bg-accent text-on-accent flex items-center justify-center shrink-0"><span
+                class="material-symbols-outlined text-[20px]">language</span></span>
+            <span>wotr.org</span>
           </a>
         </div>
-        <div class="lg:col-span-8 flex flex-col gap-space-md">
-          <p class="text-body-md md:text-body-lg text-on-surface-variant">A practical framework for rural drinking water governance, outlining operational guidelines to move from asset construction to sustained service delivery across Gram Panchayats.</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
-            <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">account_balance</span><div><span class="text-body-sm text-on-surface font-semibold block">Institutional Mechanisms &amp; Governance</span><span class="text-body-sm text-on-surface-variant block">Roles of Gram Panchayats, VWSCs, Pani Samitis and local water bodies.</span></div></div>
-            <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">construction</span><div><span class="text-body-sm text-on-surface font-semibold block">Technical Operations &amp; Maintenance</span><span class="text-body-sm text-on-surface-variant block">Preventive maintenance, asset registers, repairs and spare-part management.</span></div></div>
-            <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">biotech</span><div><span class="text-body-sm text-on-surface font-semibold block">Water Quality Monitoring</span><span class="text-body-sm text-on-surface-variant block">Field test kits, chlorination, sanitary inspections and lab testing.</span></div></div>
-            <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">payments</span><div><span class="text-body-sm text-on-surface font-semibold block">Financial Sustainability</span><span class="text-body-sm text-on-surface-variant block">User fee structures, O&amp;M costing and contingency funds.</span></div></div>
-            <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm sm:col-span-2"><span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">eco</span><div><span class="text-body-sm text-on-surface font-semibold block">Source Sustainability &amp; Community Stewardship</span><span class="text-body-sm text-on-surface-variant block">Groundwater recharge, water security planning, source protection and women-led community surveillance.</span></div></div>
-          </div>
-          <div class="flex justify-center lg:justify-start pt-space-sm">
-            <a href="Assests/Jal-Suraksha-Brochure.pdf" download class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-primary text-on-primary text-title hover:bg-secondary transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-[20px]">download</span><span>Download PDF</span>
-            </a>
-          </div>
-        </div>
+      </div>
+      <div class="pt-space-lg mt-space-xl border-t border-white/20 text-body-sm text-white/85 text-center">
+        <p>Copyright © 2026, WOTR</p>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <!-- REGISTRATION -->
-  <section id="register" class="w-full py-space-xl bg-surface">
-    <div class="max-w-3xl mx-auto px-margin-mobile md:px-gutter flex flex-col gap-space-lg">
-      <div class="text-center flex flex-col gap-1">
-        <h2 class="text-headline-lg-mobile md:text-headline-lg text-on-surface">Registration: Virtual High-Level Session</h2>
-        <p class="text-body-md text-on-surface-variant">Register below to receive the session joining link and calendar details by email.</p>
-      </div>
-
-      <div class="bg-surface-container-lowest p-space-md sm:p-space-lg md:p-space-xl rounded-xl shadow-md flex flex-col gap-space-lg">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
-          <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">calendar_today</span><div><span class="text-body-sm text-on-surface block font-semibold">9th December 2026</span><span class="text-body-sm text-on-surface-variant block">2:30 PM – 4:00 PM (GST) | 4:30 PM – 6:00 PM (IST)</span></div></div>
-          <div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px] shrink-0">videocam</span><div><span class="text-body-sm text-on-surface block font-semibold">90 Minutes • Virtual</span><span class="text-body-sm text-on-surface-variant block">Joining link shared by email after registration</span></div></div>
-        </div>
-
-        <form id="reg-form" class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" novalidate>
-          <div class="flex flex-col gap-1">
-            <label for="f-name" class="text-label-default text-on-surface">Full name <span class="text-error">*</span></label>
-            <input id="f-name" name="name" type="text" class="field" autocomplete="name" required>
-          </div>
-          <div class="flex flex-col gap-1">
-            <label for="f-email" class="text-label-default text-on-surface">Email address <span class="text-error">*</span></label>
-            <input id="f-email" name="email" type="email" class="field" autocomplete="email" required>
-          </div>
-          <div class="flex flex-col gap-1">
-            <label for="f-org" class="text-label-default text-on-surface">Organisation <span class="text-error">*</span></label>
-            <input id="f-org" name="organisation" type="text" class="field" autocomplete="organization" required>
-          </div>
-          <div class="flex flex-col gap-1">
-            <label for="f-role" class="text-label-default text-on-surface">Designation</label>
-            <input id="f-role" name="designation" type="text" class="field" autocomplete="organization-title">
-          </div>
-          <div class="flex flex-col gap-1">
-            <label for="f-country" class="text-label-default text-on-surface">Country <span class="text-error">*</span></label>
-            <input id="f-country" name="country" type="text" class="field" autocomplete="country-name" required>
-          </div>
-          <div class="flex flex-col gap-1">
-            <label for="f-type" class="text-label-default text-on-surface">Organisation type</label>
-            <select id="f-type" name="org_type" class="field">
-              <option value="">Select…</option>
-              <option>Government</option>
-              <option>NGO / Civil Society</option>
-              <option>UN / Multilateral Agency</option>
-              <option>Research / Academia</option>
-              <option>Private Sector</option>
-              <option>Media</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="flex flex-col gap-1 sm:col-span-2">
-            <label for="f-msg" class="text-label-default text-on-surface">Questions for the panel (optional)</label>
-            <textarea id="f-msg" name="questions" rows="3" class="field resize-y"></textarea>
-          </div>
-          <label class="sm:col-span-2 flex items-start gap-space-sm text-body-sm text-on-surface-variant cursor-pointer">
-            <input id="f-consent" name="consent" type="checkbox" class="mt-0.5 w-4 h-4 accent-[#00658e]" required>
-            <span>I agree to be contacted by the organisers about this event. <span class="text-error">*</span></span>
-          </label>
-          <p id="form-error" class="sm:col-span-2 hidden text-body-sm text-error" role="alert">Please fill in all required fields correctly.</p>
-          <div class="sm:col-span-2">
-            <button type="submit" class="w-full inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-accent text-on-accent text-title hover:bg-accent-dim transition-colors shadow-sm">
-              <span class="material-symbols-outlined text-[20px]">how_to_reg</span><span>Register</span>
-            </button>
-          </div>
-        </form>
-
-        <div id="form-success" class="hidden flex-col items-center text-center gap-space-sm py-space-lg" role="status">
-          <span class="w-14 h-14 rounded-full bg-primary-fixed text-primary flex items-center justify-center"><span class="material-symbols-outlined text-[32px]">check_circle</span></span>
-          <h3 class="text-headline-sm text-on-surface">Thank you for registering!</h3>
-          <p class="text-body-md text-on-surface-variant max-w-md">The joining link and calendar details will be sent to your email before the session.</p>
-        </div>
-
-        <p class="text-body-sm text-on-surface-variant text-center bg-surface-container-low rounded-lg py-space-sm px-space-md">
-          Need help with registration? Call <a href="tel:+919822684182" class="text-primary font-medium hover:underline whitespace-nowrap">+91 98226 84182</a>
-        </p>
-      </div>
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="md:hidden fixed bottom-0 w-full z-50 pb-safe bg-deep shadow-[0_-2px_12px_rgba(0,0,0,0.18)]"
+    aria-label="Sections">
+    <div class="grid grid-cols-5 h-16">
+      <a href="#about" data-target="about"
+        class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span
+          class="material-symbols-outlined text-[22px]">info</span>About</a>
+      <a href="#purpose" data-target="purpose"
+        class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span
+          class="material-symbols-outlined text-[22px]">flag</span>Purpose</a>
+      <a href="#speakers" data-target="speakers"
+        class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span
+          class="material-symbols-outlined text-[22px]">groups</span>Speakers</a>
+      <a href="#publication" data-target="publication"
+        class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span
+          class="material-symbols-outlined text-[22px]">menu_book</span>Material</a>
+      <a href="#register" data-target="register"
+        class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span
+          class="material-symbols-outlined text-[22px]">how_to_reg</span>Register</a>
     </div>
-  </section>
-</main>
+  </nav>
 
-<!-- FOOTER -->
-<footer class="w-full bg-primary text-white">
-  <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter py-space-xl">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl">
-      <div class="md:col-span-2 flex flex-col gap-space-md items-center text-center md:items-start md:text-left">
-        <div class="flex items-center gap-space-sm">
-          <span class="w-10 h-10 rounded-lg flex items-center justify-center bg-white shrink-0 overflow-hidden">
-            <img src="Assests/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
-          </span>
-          <span class="text-title text-white">UN Water Conference 2026</span>
-        </div>
-        <p class="text-body-sm leading-relaxed max-w-md text-white/85">Securing Drinking Water for All — a virtual session on sustainable, climate-resilient rural drinking water services under the Jal Jeevan Mission.</p>
-        <div class="inline-flex items-center gap-space-md bg-white rounded-xl px-space-md py-space-sm">
-          <img src="Assests/Images/WOTR Logo_with Tagline.png" alt="WOTR" class="h-9 w-auto object-contain">
-          <span class="h-8 w-px bg-outline-variant"></span>
-          <img src="Assests/Images/W-CReSLogo with Tagline.png" alt="W-CReS" class="h-11 w-auto object-contain">
-        </div>
-      </div>
-      <div class="flex flex-col gap-space-sm items-center md:items-start">
-        <span class="text-title text-accent">Event Overview</span>
-        <ul class="space-y-space-xs text-body-md uppercase text-center md:text-left">
-          <li><a class="hover:text-accent transition-colors" href="#about">About the Event</a></li>
-          <li><a class="hover:text-accent transition-colors" href="#purpose">Purpose</a></li>
-          <li><a class="hover:text-accent transition-colors" href="#speakers">Speakers</a></li>
-          <li><a class="hover:text-accent transition-colors" href="#publication">Relevant Material</a></li>
-          <li><a class="hover:text-accent transition-colors" href="#register">Registration</a></li>
-        </ul>
-      </div>
-      <div class="flex flex-col gap-space-md items-center md:items-start text-center md:text-left">
-        <span class="text-title text-accent">Contact</span>
-        <a href="mailto:info@wotr.org" class="flex items-center gap-space-md hover:text-accent transition-colors">
-          <span class="w-10 h-10 rounded-full bg-accent text-on-accent flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">mail</span></span>
-          <span>info@wotr.org</span>
-        </a>
-        <a href="tel:+919822684182" class="flex items-center gap-space-md hover:text-accent transition-colors">
-          <span class="w-10 h-10 rounded-full bg-accent text-on-accent flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">call</span></span>
-          <span>+91 98226 84182</span>
-        </a>
-        <a href="https://wotr.org" target="_blank" rel="noopener" class="flex items-center gap-space-md hover:text-accent transition-colors">
-          <span class="w-10 h-10 rounded-full bg-accent text-on-accent flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">language</span></span>
-          <span>wotr.org</span>
-        </a>
-      </div>
-    </div>
-    <div class="pt-space-lg mt-space-xl border-t border-white/20 text-body-sm text-white/85 text-center">
-      <p>Copyright © 2026, WOTR</p>
-    </div>
-  </div>
-</footer>
-
-<!-- MOBILE BOTTOM NAV -->
-<nav class="md:hidden fixed bottom-0 w-full z-50 pb-safe bg-deep shadow-[0_-2px_12px_rgba(0,0,0,0.18)]" aria-label="Sections">
-  <div class="grid grid-cols-5 h-16">
-    <a href="#about" data-target="about" class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span class="material-symbols-outlined text-[22px]">info</span>About</a>
-    <a href="#purpose" data-target="purpose" class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span class="material-symbols-outlined text-[22px]">flag</span>Purpose</a>
-    <a href="#speakers" data-target="speakers" class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span class="material-symbols-outlined text-[22px]">groups</span>Speakers</a>
-    <a href="#publication" data-target="publication" class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span class="material-symbols-outlined text-[22px]">menu_book</span>Material</a>
-    <a href="#register" data-target="register" class="bnav-link flex flex-col items-center justify-center gap-0.5 text-white/80 text-[10px]"><span class="material-symbols-outlined text-[22px]">how_to_reg</span>Register</a>
-  </div>
-</nav>
-
-<script>
-// Speakers
-const speakers = [
-  { name: "Eshwer Kale", img: "Eshwer-Kale-Picsart-ImageFlipper.png",
-    role: "Thematic Lead – Water Resources Development and Governance, WOTR Centre for Resilience Studies (W-CReS), India",
-    topic: "Challenges and Opportunities in Strengthening O&M Systems for Rural Drinking Water Schemes under the Jal Jeevan Mission." },
-  { name: "Manish Wasuja / Anand Ghodke", img: "Manish-Wasuja.png",
-    role: "WASH Specialist, UNICEF India",
-    topic: "WASH and Water Quality: Ensuring Safe and Reliable Drinking Water Services for Rural Households." },
-  { name: "Anuj Sharma", img: "Anuj-Sharma.webp",
-    role: "Chief Executive Officer, Arghyam, India",
-    topic: "Achieving Universal and Reliable Drinking Water Services under the Jal Jeevan Mission: Challenges and Opportunities." },
-  { name: "Sanjay Singh", img: "Sanjay-Singh-Picsart-ImageFlipper.png",
-    role: "Secretary, Parmarth Samaj Sevi Sansthan, India",
-    topic: "Community Institutions and Women’s Engagement for Sustainable Rural Drinking Water Services." },
-  { name: "Harish Daware", img: "Harish-Daware.JPG",
-    role: "Director, Watershed Organisation Trust (WOTR), India",
-    topic: "Strengthening Drinking Water Sources for Reliable Supply and Long-Term Scheme Sustainability." },
-  { name: "Priya Agarwal", img: "Priya-Agarwal.png",
-    role: "Food Systems Consultant, India Climate Collaborative (ICC)",
-    topic: "Climate Resilience and Sustainable Financing for Rural Drinking Water Systems." }
-];
-const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
-document.getElementById("speaker-grid").innerHTML = speakers.map((s, i) => `
+  <script>
+    // Speakers
+    const speakers = [
+      {
+        name: "Eshwer Kale", img: "Eshwer-Kale-Picsart-ImageFlipper.png",
+        role: "Thematic Lead – Water Resources Development and Governance, WOTR Centre for Resilience Studies (W-CReS), India",
+        topic: "Challenges and Opportunities in Strengthening O&M Systems for Rural Drinking Water Schemes under the Jal Jeevan Mission."
+      },
+      {
+        name: "Manish Wasuja / Anand Ghodke", img: "Manish-Wasuja.png",
+        role: "WASH Specialist, UNICEF India",
+        topic: "WASH and Water Quality: Ensuring Safe and Reliable Drinking Water Services for Rural Households."
+      },
+      {
+        name: "Anuj Sharma", img: "Anuj-Sharma.webp",
+        role: "Chief Executive Officer, Arghyam, India",
+        topic: "Achieving Universal and Reliable Drinking Water Services under the Jal Jeevan Mission: Challenges and Opportunities."
+      },
+      {
+        name: "Sanjay Singh", img: "Sanjay-Singh-Picsart-ImageFlipper.png",
+        role: "Secretary, Parmarth Samaj Sevi Sansthan, India",
+        topic: "Community Institutions and Women’s Engagement for Sustainable Rural Drinking Water Services."
+      },
+      {
+        name: "Harish Daware", img: "Harish-Daware.JPG",
+        role: "Director, Watershed Organisation Trust (WOTR), India",
+        topic: "Strengthening Drinking Water Sources for Reliable Supply and Long-Term Scheme Sustainability."
+      },
+      {
+        name: "Priya Agarwal", img: "Priya-Agarwal.png",
+        role: "Food Systems Consultant, India Climate Collaborative (ICC)",
+        topic: "Climate Resilience and Sustainable Financing for Rural Drinking Water Systems."
+      }
+    ];
+    const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    document.getElementById("speaker-grid").innerHTML = speakers.map((s, i) => `
   <article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
     <div class="flex flex-col sm:flex-row md:flex-row items-center sm:items-center gap-space-md text-center sm:text-left">
       <div class="w-24 h-24 sm:h-32 rounded-full sm:rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-sm">
@@ -496,42 +733,43 @@ document.getElementById("speaker-grid").innerHTML = speakers.map((s, i) => `
     </div>
   </article>`).join("");
 
-// Active section highlighting (top nav + bottom nav)
-const links = document.querySelectorAll("[data-target]");
-const sections = [...new Set([...links].map(l => l.dataset.target))].map(id => document.getElementById(id));
-const setActive = id => links.forEach(l => {
-  const on = l.dataset.target === id;
-  l.classList.toggle("active", on);
-  if (on) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current");
-});
-const onScroll = () => {
-  const y = window.scrollY + 120;
-  let current = null;
-  for (const s of sections) if (s.offsetTop <= y) current = s.id;
-  setActive(current);
-};
-window.addEventListener("scroll", onScroll, { passive: true });
-onScroll();
+    // Active section highlighting (top nav + bottom nav)
+    const links = document.querySelectorAll("[data-target]");
+    const sections = [...new Set([...links].map(l => l.dataset.target))].map(id => document.getElementById(id));
+    const setActive = id => links.forEach(l => {
+      const on = l.dataset.target === id;
+      l.classList.toggle("active", on);
+      if (on) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current");
+    });
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let current = null;
+      for (const s of sections) if (s.offsetTop <= y) current = s.id;
+      setActive(current);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
 
-// Registration form (client-side only for now — connect to a backend / form service before going live)
-const form = document.getElementById("reg-form");
-const errorEl = document.getElementById("form-error");
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  let ok = true;
-  form.querySelectorAll("[required]").forEach(f => {
-    const valid = f.type === "checkbox" ? f.checked : f.value.trim() !== "" && f.checkValidity();
-    if (f.type !== "checkbox") f.classList.toggle("invalid", !valid);
-    if (!valid) ok = false;
-  });
-  errorEl.classList.toggle("hidden", ok);
-  if (!ok) { form.querySelector(".invalid, [required]:not(:checked)")?.focus(); return; }
-  // TODO: send `new FormData(form)` to the registration endpoint.
-  form.classList.add("hidden");
-  const done = document.getElementById("form-success");
-  done.classList.remove("hidden"); done.classList.add("flex");
-});
-form.querySelectorAll(".field").forEach(f => f.addEventListener("input", () => f.classList.remove("invalid")));
-</script>
+    // Registration form (client-side only for now — connect to a backend / form service before going live)
+    const form = document.getElementById("reg-form");
+    const errorEl = document.getElementById("form-error");
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      let ok = true;
+      form.querySelectorAll("[required]").forEach(f => {
+        const valid = f.type === "checkbox" ? f.checked : f.value.trim() !== "" && f.checkValidity();
+        if (f.type !== "checkbox") f.classList.toggle("invalid", !valid);
+        if (!valid) ok = false;
+      });
+      errorEl.classList.toggle("hidden", ok);
+      if (!ok) { form.querySelector(".invalid, [required]:not(:checked)")?.focus(); return; }
+      // TODO: send `new FormData(form)` to the registration endpoint.
+      form.classList.add("hidden");
+      const done = document.getElementById("form-success");
+      done.classList.remove("hidden"); done.classList.add("flex");
+    });
+    form.querySelectorAll(".field").forEach(f => f.addEventListener("input", () => f.classList.remove("invalid")));
+  </script>
 </body>
+
 </html>
