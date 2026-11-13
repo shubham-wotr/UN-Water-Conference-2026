@@ -7,7 +7,7 @@
   <title>Securing Drinking Water for All | UN Water Conference 2026</title>
   <meta name="description"
     content="Virtual session at the UN Water Conference 2026 on strengthening Operation &amp; Maintenance systems for rural drinking water under the Jal Jeevan Mission, India.">
-  <link rel="icon" type="image/png" href="Assests/Images/WOTR-icon.png">
+  <link rel="icon" type="image/png" href="assets/Images/WOTR-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,106 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
     rel="stylesheet">
   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            /* WOTR theme (wotr.org): deep teal + sunflower yellow */
-            "background": "#f8faf9", "surface": "#f8faf9",
-            "surface-container-lowest": "#ffffff", "surface-container-low": "#eef5f3",
-            "surface-container": "#e3efec", "surface-container-high": "#d3e5e1",
-            "surface-variant": "#d3e5e1", "inverse-surface": "#0f3d3a",
-            "on-surface": "#10302d", "on-surface-variant": "#3e5552",
-            "primary": "#134f4c", "on-primary": "#ffffff",
-            "primary-container": "#fdc530", "on-primary-container": "#10302d",
-            "primary-fixed": "#fde9ad", "on-primary-fixed": "#10302d",
-            "secondary": "#1d6b66", "on-secondary": "#ffffff",
-            "tertiary": "#2e7d4f", "on-tertiary": "#ffffff",
-            "accent": "#fdc530", "accent-dim": "#f0b400", "on-accent": "#10302d",
-            "deep": "#0f3d3a",
-            "outline": "#6b7f7c", "outline-variant": "#bfd0cc",
-            "error": "#ba1a1a", "error-container": "#ffdad6",
-            "banner": "#93a9b8"
-          },
-          borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "9999px" },
-          spacing: {
-            "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem",
-            "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin-mobile": "1rem"
-          },
-          fontFamily: { sans: ["Lexend", "system-ui", "sans-serif"] },
-          fontSize: {
-            "display-hero": ["48px", { lineHeight: "56px", fontWeight: "700" }],
-            "headline-lg": ["36px", { lineHeight: "44px", fontWeight: "700" }],
-            "headline-lg-mobile": ["26px", { lineHeight: "33px", fontWeight: "700" }],
-            "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
-            "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
-            "title": ["16px", { lineHeight: "24px", fontWeight: "600" }],
-            "body-lg": ["18px", { lineHeight: "28px" }],
-            "body-md": ["15px", { lineHeight: "22px" }],
-            "body-sm": ["13px", { lineHeight: "18px" }],
-            "label-default": ["12px", { lineHeight: "16px", fontWeight: "500" }],
-            "label-caps": ["11px", { lineHeight: "16px", fontWeight: "700" }]
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    section[id] {
-      scroll-margin-top: 72px;
-    }
-
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      line-height: 1;
-    }
-
-    .pb-safe {
-      padding-bottom: env(safe-area-inset-bottom);
-    }
-
-    .field {
-      width: 100%;
-      border: 1px solid #bfd0cc;
-      border-radius: 0.375rem;
-      background: #fff;
-      padding: 0.625rem 0.75rem;
-      font-size: 15px;
-      color: #10302d;
-      transition: border-color .15s, box-shadow .15s;
-    }
-
-    .field:focus {
-      outline: none;
-      border-color: #134f4c;
-      box-shadow: 0 0 0 3px rgba(253, 197, 48, .45);
-    }
-
-    .field.invalid {
-      border-color: #ba1a1a;
-    }
-
-    .nav-link.active {
-      color: #fdc530;
-      box-shadow: inset 0 -2px 0 #fdc530;
-    }
-
-    .bnav-link.active {
-      color: #fdc530;
-      font-weight: 700;
-    }
-
-    .bnav-link.active .material-symbols-outlined {
-      font-variation-settings: 'FILL' 1;
-    }
-  </style>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="bg-background font-sans text-body-md text-on-surface antialiased pb-16 md:pb-0">
@@ -125,7 +27,7 @@
       <a href="#top" class="flex items-center gap-space-sm md:gap-space-md min-w-0">
         <span
           class="w-10 h-10 flex items-center justify-center shrink-0">
-          <img src="Assests/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
+          <img src="assets/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
         </span>
         <span class="flex flex-col items-start text-left min-w-0">
           <span
@@ -168,7 +70,7 @@
     <!-- UN Water Conference logo -->
     <section class="w-full bg-surface-container-lowest">
       <div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter flex items-center justify-center py-space-md">
-        <img src="Assests/Images/Logos.png" alt="United Nations Water Conference Abu Dhabi 2026"
+        <img src="assets/Images/Logos.png" alt="United Nations Water Conference Abu Dhabi 2026"
           class="h-10 sm:h-12 md:h-16 w-auto object-contain">
       </div>
     </section>
@@ -176,7 +78,7 @@
     <!-- Heading banner -->
     <section class="w-full bg-banner overflow-hidden">
       <div class="w-full max-w-7xl mx-auto">
-        <img src="Assests/Images/Heading-banner.png"
+        <img src="assets/Images/Heading-banner.png"
           alt="Every Future Flows From Water – 2026 UN Water Conference, co-hosted by the UAE &amp; Senegal"
           class="w-full h-auto block">
       </div>
@@ -189,10 +91,10 @@
         <div class="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-md">
           <span class="text-label-caps text-on-surface-variant uppercase tracking-wider shrink-0">Main host:</span>
           <div class="flex items-center gap-space-md">
-            <img src="Assests/Images/WOTR Logo_with Tagline.png" alt="WOTR – Watershed Organisation Trust"
+            <img src="assets/Images/WOTR Logo_with Tagline.png" alt="WOTR – Watershed Organisation Trust"
               class="h-10 md:h-12 w-auto object-contain">
             <span class="h-10 w-px bg-outline-variant"></span>
-            <img src="Assests/Images/W-CReSLogo with Tagline.png" alt="W-CReS – WOTR Centre for Resilience Studies"
+            <img src="assets/Images/W-CReSLogo with Tagline.png" alt="W-CReS – WOTR Centre for Resilience Studies"
               class="h-12 md:h-16 w-auto object-contain">
           </div>
         </div>
@@ -200,9 +102,9 @@
         <div class="flex flex-col sm:flex-row items-center gap-space-sm sm:gap-space-md">
           <span class="text-label-caps text-on-surface-variant uppercase tracking-wider shrink-0">Co-hosts:</span>
           <div class="flex items-center gap-space-lg">
-            <img src="Assests/Images/ABCD-Centre-Logo.png"
+            <img src="assets/Images/ABCD-Centre-Logo.png"
               alt="ABCD Centre – Global Water and Climate Adaptation Centre" class="h-10 md:h-20 w-auto object-contain">
-            <img src="Assests/Images/UNICEF_ForEveryChild_Cyan_Vertical_RGB__144ppi_ENG.png"
+            <img src="assets/Images/UNICEF_ForEveryChild_Cyan_Vertical_RGB__144ppi_ENG.png"
               alt="UNICEF – for every child" class="h-12 md:h-14 w-auto object-contain">
           </div>
         </div>
@@ -260,7 +162,7 @@
           <div class="lg:col-span-5 flex justify-center lg:justify-end">
             <div
               class="w-full max-w-[260px] lg:max-w-sm bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex items-center justify-center">
-              <img src="Assests/Images/JJM-Logo.png" alt="Har Ghar Jal – Jal Jeevan Mission"
+              <img src="assets/Images/JJM-Logo.png" alt="Har Ghar Jal – Jal Jeevan Mission"
                 class="w-full max-h-[340px] h-auto object-contain">
             </div>
           </div>
@@ -390,7 +292,7 @@
           class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-center gap-space-lg">
           <div
             class="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden shrink-0 shadow-sm bg-surface-container-lowest">
-            <img src="Assests/Images/Sarah-Elser.jpeg" alt="Sarah Elser" class="w-full h-full object-cover object-top"
+            <img src="assets/Images/Sarah-Elser.jpeg" alt="Sarah Elser" class="w-full h-full object-cover object-top"
               loading="lazy">
           </div>
           <div class="flex flex-col gap-space-xs text-center md:text-left">
@@ -401,7 +303,7 @@
             <p class="text-body-md text-secondary font-medium">Coordinator, Global Water and Climate Adaptation Centre
               (ABCD Centre), Technische Universität Dresden, Germany</p>
             <div class="flex flex-col md:flex-row items-center gap-space-sm pt-space-xs justify-center md:justify-start">
-              <img src="Assests/Images/ABCD-Centre-Logo.png" alt="ABCD Centre"
+              <img src="assets/Images/ABCD-Centre-Logo.png" alt="ABCD Centre"
                 class="h-12 w-auto object-contain shrink-0">
               <span class="text-label-caps uppercase text-secondary tracking-wide text-center md:text-left">Global Water and Climate
                 Adaptation Centre</span>
@@ -417,7 +319,7 @@
           class="bg-surface-container p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-center gap-space-lg">
           <div
             class="w-28 h-28 sm:w-32 sm:h-32 rounded-full sm:rounded-lg overflow-hidden shrink-0 shadow-sm bg-surface-container-lowest">
-            <img src="Assests/Images/Bishwadeep-Ghosh.jpeg" alt="Bishwadeep Ghose"
+            <img src="assets/Images/Bishwadeep-Ghosh.jpeg" alt="Bishwadeep Ghose"
               class="w-full h-full object-cover object-top" loading="lazy">
           </div>
           <div class="flex flex-col gap-space-xs text-center sm:text-left">
@@ -444,9 +346,9 @@
         <div
           class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-md grid grid-cols-1 lg:grid-cols-12 gap-space-lg lg:gap-space-xl items-center">
           <div class="lg:col-span-4 flex justify-center">
-            <a href="Assests/Jal-Suraksha-Brochure.pdf" target="_blank" rel="noopener"
+            <a href="assets/Jal-Suraksha-Brochure.pdf" target="_blank" rel="noopener"
               class="block rounded-lg overflow-hidden shadow-lg max-w-[240px] md:max-w-[280px] hover:shadow-xl transition-shadow">
-              <img src="Assests/Images/Publication-cover.png" alt="Jal-Suraksha publication cover"
+              <img src="assets/Images/Publication-cover.png" alt="Jal-Suraksha publication cover"
                 class="w-full h-auto block" loading="lazy">
             </a>
           </div>
@@ -488,7 +390,7 @@
               </div>
             </div>
             <div class="flex justify-center lg:justify-start pt-space-sm">
-              <a href="Assests/Jal-Suraksha-Brochure.pdf" download
+              <a href="assets/Jal-Suraksha-Brochure.pdf" download
                 class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-space-lg py-3 rounded-full bg-primary text-on-primary text-title hover:bg-secondary transition-colors shadow-sm">
                 <span class="material-symbols-outlined text-[20px]">download</span><span>Download PDF</span>
               </a>
@@ -608,7 +510,7 @@
         <div class="md:col-span-2 flex flex-col gap-space-md items-center text-center md:items-start md:text-left">
           <div class="flex items-center gap-space-sm">
             <span class="w-11 h-11 flex items-center justify-center shrink-0">
-              <img src="Assests/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
+              <img src="assets/Images/WOTR-icon.png" alt="WOTR" class="w-full h-full object-contain">
             </span>
             <span class="flex flex-col items-start !text-left">
               <span class="text-label-caps font-bold text-accent uppercase tracking-widest leading-tight">Virtual Side
@@ -619,9 +521,9 @@
           <p class="text-body-sm leading-relaxed max-w-md text-white/85">Securing Drinking Water for All — a virtual
             session on sustainable, climate-resilient rural drinking water services under the Jal Jeevan Mission.</p>
           <div class="inline-flex items-center gap-space-md bg-white rounded-xl px-space-md py-space-sm">
-            <img src="Assests/Images/WOTR Logo_with Tagline.png" alt="WOTR" class="h-9 w-auto object-contain">
+            <img src="assets/Images/WOTR Logo_with Tagline.png" alt="WOTR" class="h-9 w-auto object-contain">
             <span class="h-8 w-px bg-outline-variant"></span>
-            <img src="Assests/Images/W-CReSLogo with Tagline.png" alt="W-CReS" class="h-11 w-auto object-contain">
+            <img src="assets/Images/W-CReSLogo with Tagline.png" alt="W-CReS" class="h-11 w-auto object-contain">
           </div>
         </div>
         <div class="flex flex-col gap-space-sm items-center md:items-start">
@@ -687,96 +589,6 @@
     </div>
   </nav>
 
-  <script>
-    // Speakers
-    const speakers = [
-      {
-        name: "Eshwer Kale", img: "Eshwer-Kale-Picsart-ImageFlipper.png",
-        role: "Thematic Lead – Water Resources Development and Governance, WOTR Centre for Resilience Studies (W-CReS), India",
-        topic: "Challenges and Opportunities in Strengthening O&M Systems for Rural Drinking Water Schemes under the Jal Jeevan Mission."
-      },
-      {
-        name: "Manish Wasuja / Anand Ghodke", img: "Manish-Wasuja.png",
-        role: "WASH Specialist, UNICEF India",
-        topic: "WASH and Water Quality: Ensuring Safe and Reliable Drinking Water Services for Rural Households."
-      },
-      {
-        name: "Anuj Sharma", img: "Anuj-Sharma.webp",
-        role: "Chief Executive Officer, Arghyam, India",
-        topic: "Achieving Universal and Reliable Drinking Water Services under the Jal Jeevan Mission: Challenges and Opportunities."
-      },
-      {
-        name: "Sanjay Singh", img: "Sanjay-Singh-Picsart-ImageFlipper.png",
-        role: "Secretary, Parmarth Samaj Sevi Sansthan, India",
-        topic: "Community Institutions and Women’s Engagement for Sustainable Rural Drinking Water Services."
-      },
-      {
-        name: "Harish Daware", img: "Harish-Daware.JPG",
-        role: "Director, Watershed Organisation Trust (WOTR), India",
-        topic: "Strengthening Drinking Water Sources for Reliable Supply and Long-Term Scheme Sustainability."
-      },
-      {
-        name: "Priya Agarwal", img: "Priya-Agarwal.png",
-        role: "Food Systems Consultant, India Climate Collaborative (ICC)",
-        topic: "Climate Resilience and Sustainable Financing for Rural Drinking Water Systems."
-      }
-    ];
-    const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
-    document.getElementById("speaker-grid").innerHTML = speakers.map((s, i) => `
-  <article class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
-    <div class="flex flex-col sm:flex-row md:flex-row items-center sm:items-center gap-space-md text-center sm:text-left">
-      <div class="w-24 h-24 sm:h-32 rounded-full sm:rounded-xl overflow-hidden bg-surface-container shrink-0 shadow-sm">
-        <img src="Assests/Images/${encodeURI(s.img)}" alt="${esc(s.name)}" class="w-full h-full object-cover object-top" loading="lazy">
-      </div>
-      <div class="flex flex-col">
-        <span class="text-label-caps text-outline uppercase tracking-wider">Speaker ${i + 1}</span>
-        <h3 class="text-title text-on-surface">${esc(s.name)}</h3>
-        <p class="text-body-sm text-on-surface-variant mt-0.5">${esc(s.role)}</p>
-      </div>
-    </div>
-    <div class="mt-space-md bg-surface-container-low p-space-sm rounded-lg">
-      <span class="text-label-caps uppercase text-secondary block">Session Topic</span>
-      <p class="text-body-sm text-on-surface mt-1">${esc(s.topic)}</p>
-    </div>
-  </article>`).join("");
-
-    // Active section highlighting (top nav + bottom nav)
-    const links = document.querySelectorAll("[data-target]");
-    const sections = [...new Set([...links].map(l => l.dataset.target))].map(id => document.getElementById(id));
-    const setActive = id => links.forEach(l => {
-      const on = l.dataset.target === id;
-      l.classList.toggle("active", on);
-      if (on) l.setAttribute("aria-current", "true"); else l.removeAttribute("aria-current");
-    });
-    const onScroll = () => {
-      const y = window.scrollY + 120;
-      let current = null;
-      for (const s of sections) if (s.offsetTop <= y) current = s.id;
-      setActive(current);
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-
-    // Registration form (client-side only for now — connect to a backend / form service before going live)
-    const form = document.getElementById("reg-form");
-    const errorEl = document.getElementById("form-error");
-    form.addEventListener("submit", e => {
-      e.preventDefault();
-      let ok = true;
-      form.querySelectorAll("[required]").forEach(f => {
-        const valid = f.type === "checkbox" ? f.checked : f.value.trim() !== "" && f.checkValidity();
-        if (f.type !== "checkbox") f.classList.toggle("invalid", !valid);
-        if (!valid) ok = false;
-      });
-      errorEl.classList.toggle("hidden", ok);
-      if (!ok) { form.querySelector(".invalid, [required]:not(:checked)")?.focus(); return; }
-      // TODO: send `new FormData(form)` to the registration endpoint.
-      form.classList.add("hidden");
-      const done = document.getElementById("form-success");
-      done.classList.remove("hidden"); done.classList.add("flex");
-    });
-    form.querySelectorAll(".field").forEach(f => f.addEventListener("input", () => f.classList.remove("invalid")));
-  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
-</html>

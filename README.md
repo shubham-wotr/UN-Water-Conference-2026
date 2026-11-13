@@ -12,8 +12,8 @@ The session looks at sustainable, climate-resilient rural drinking water service
 
 ## Tech stack
 
-- A single static HTML page ([index.html](index.html)) with no build step.
-- [Tailwind CSS](https://tailwindcss.com/) loaded from its CDN (`cdn.tailwindcss.com/3.4.16`), with the WOTR brand colours set in the inline `tailwind.config`.
+- A static HTML page ([index.html](index.html)) with no build step. Styles and scripts live in [assets/css/](assets/css/) and [assets/js/](assets/js/).
+- [Tailwind CSS](https://tailwindcss.com/) loaded from its CDN (`cdn.tailwindcss.com/3.4.16`), with the WOTR brand colours set in [assets/js/tailwind-config.js](assets/js/tailwind-config.js).
 - The [Lexend](https://fonts.google.com/specimen/Lexend) font and Material Symbols icons from Google Fonts.
 - A small amount of vanilla JavaScript that:
   - builds the speaker cards
@@ -25,19 +25,19 @@ The session looks at sustainable, climate-resilient rural drinking water service
 ```
 .
 ├── index.html                  # The event page
-├── Assests/
+├── assets/
+│   ├── css/styles.css          # Custom styles
+│   ├── js/main.js              # Speaker cards, nav highlighting, registration form
+│   ├── js/tailwind-config.js   # Tailwind brand colours and type scale
 │   ├── Images/                 # Logos, speaker photos, banner, publication cover
 │   ├── Jal-Suraksha-Brochure.pdf
 │   ├── Concept note for Virtual event_...pdf
 │   └── content.txt             # Source copy for the page
-
 ```
-
-> The assets folder is spelled `Assests`, and the page links to it by that name. If you rename the folder, update the paths in `index.html` too.
 
 ## Editing content
 
-- **Speakers:** edit the `speakers` array in the `<script>` block near the bottom of `index.html`. Each entry has a `name`, an `img` (a file name in `Assests/Images/`), a `role` and a `topic`.
+- **Speakers:** edit the `speakers` array at the top of [assets/js/main.js](assets/js/main.js). Each entry has a `name`, an `img` (a file name in `assets/Images/`), a `role` and a `topic`.
 - **Moderator and concluding remarks:** these are written directly in the HTML of the `#speakers` section.
-- **Brand colours and type scale:** set in the `tailwind.config` script in the `<head>`.
+- **Brand colours and type scale:** set in [assets/js/tailwind-config.js](assets/js/tailwind-config.js).
 - **Navbar and footer titles:** in the `<header>` and `<footer>` elements.
