@@ -30,8 +30,6 @@ The session looks at sustainable, climate-resilient rural drinking water service
 │   ├── Jal-Suraksha-Brochure.pdf
 │   ├── Concept note for Virtual event_...pdf
 │   └── content.txt             # Source copy for the page
-├── un_water_conference_2026_securing_drinking_water_for_all/         # Desktop design mock-up (code.html + screen.png)
-├── un_water_conference_2026_securing_drinking_water_for_all_mobile/  # Mobile design mock-up
 
 ```
 
