@@ -51,3 +51,11 @@ section[id] {
 .bnav-link.active .material-symbols-outlined {
   font-variation-settings: 'FILL' 1;
 }
+
+.flex.flex-wrap.items-center.justify-center.gap-x-space-sm.gap-y-1 {
+  font-size: 14px;
+}
+
+.flex.flex-wrap.items-center.justify-center.gap-x-space-sm.gap-y-1.font-medium {
+  padding-top: 5px;
+}
