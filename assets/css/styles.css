@@ -59,3 +59,7 @@ section[id] {
 .flex.flex-wrap.items-center.justify-center.gap-x-space-sm.gap-y-1.font-medium {
   padding-top: 5px;
 }
+
+h2.max-w-4xl.normal-case.tracking-normal.text-body-md.md\:text-body-lg.font-semibold.leading-snug.pt-space-xs {
+    color: #00404a;
+}
