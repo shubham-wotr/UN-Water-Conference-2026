@@ -6,7 +6,7 @@ const speakers = [
     topic: "Challenges and Opportunities in Strengthening O&M Systems for Rural Drinking Water Schemes under the Jal Jeevan Mission."
   },
   {
-    name: "Manish Wasuja / Anand Ghodke", img: "Manish-Wasuja.png",
+    name: "Manish Wasuja", img: "Manish-Wasuja.png",
     role: "WASH Specialist, UNICEF India",
     topic: "WASH and Water Quality: Ensuring Safe and Reliable Drinking Water Services for Rural Households."
   },
